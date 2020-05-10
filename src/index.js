@@ -27,7 +27,7 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
         <Container>
-            <Router history={customHistory}>
+            <Router>
                 <Route exact path='/' component={App} />
                 <Route path='/viewMessages' component={ViewMessages} />
                 <Route path='/addMessage' component={NewMessages} />

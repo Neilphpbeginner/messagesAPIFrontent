@@ -2,6 +2,7 @@
     "name": "apitestfronend",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://message-api-frontend.herokuapp.com/",
     "dependencies": {
         "@material-ui/core": "^4.9.13",
         "@material-ui/icons": "^4.9.1",
@@ -13,6 +14,7 @@
         "bootstrap": "^4.4.1",
         "express": "^4.17.1",
         "history": "^4.10.1",
+        "next": "^9.3.6",
         "path": "^0.12.7",
         "react": "^16.13.1",
         "react-bootstrap": "^1.0.1",
@@ -27,10 +29,11 @@
         "redux-thunk": "^2.3.0"
     },
     "scripts": {
-        "start": "node server.js",
-        "build": "react-scripts build",
+        "start": "next start",
+        "build": "react-scripts eject build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "exit": "next telemetry disable"
     },
     "eslintConfig": {
         "extends": "react-app"
