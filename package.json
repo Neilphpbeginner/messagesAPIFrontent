@@ -11,7 +11,9 @@
         "@testing-library/user-event": "^7.2.1",
         "axios": "^0.19.2",
         "bootstrap": "^4.4.1",
+        "express": "^4.17.1",
         "history": "^4.10.1",
+        "path": "^0.12.7",
         "react": "^16.13.1",
         "react-bootstrap": "^1.0.1",
         "react-dom": "^16.13.1",
@@ -24,9 +26,13 @@
         "redux-logger": "^3.0.6",
         "redux-thunk": "^2.3.0"
     },
+    "engines": {
+        "node": "12.6.x",
+        "npm": "6.x"
+    },
     "scripts": {
-        "start": "node idex.js",
-        "build": "react-scripts build",
+        "start": "node server.js",
+        "build": "webpack",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
